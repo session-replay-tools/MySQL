@@ -12,7 +12,7 @@
 5. Support large transactions more friendly.
 6. Solve TCP self-connect problems.
 7. Change the behavior for after consistency level
-   The transaction will wait until its changes have been applied on a majority of the members in a group in order to avoid performance collapse.
+   * The transaction will wait until its changes have been applied on a majority of the members in a group in order to avoid performance collapse.
 8. Improve the start process when the state is recovering 
 9. Fix the whole cluster's performance collapse when the disk is full
 10. Fix lots of thread synchronization problems for Group Replication consistency when view is changed.
