@@ -23,6 +23,12 @@
 15. Improve message passing more smoothly.
 16. Fix thread synchronization problems when staring
 
+## Note:
+1. The tar.xz file only works for centos 7+ version
+2. As the flow control algorithm is total different, the modified version is not compatible with the official version
+3. slave_parallel_workers should be set two twice the cpu number in order to achieve beffer performance.
+4. For using arbitrator, set loose-group_replication_arbitrator=true
+
 ## Bugs and feature requests:
 I hope that you're able to try out the latest version.
 If you encounter any issues with the release, I would encourage you to file a bug report.
