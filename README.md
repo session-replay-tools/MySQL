@@ -30,7 +30,7 @@
 13. Detect network conditions more accurately.
    * When one member is crashed,  one second is needed to detect this failure instead of official 5 seconds.
 14. Add arbitrator mode for Paxos communication.
-   * The arbitrator member does not store data and only participates in vote.
+   * The arbitrator member does not store any data and only participates in vote.
 15. Improve message passing more smoothly.
    * Batch size is limited to 65536 in order to avoid  inefficiently message passing.
    * Send less data in order to avoid performance jitter.
