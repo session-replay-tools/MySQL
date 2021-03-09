@@ -33,7 +33,7 @@
    * The arbitrator member does not store any data and only participates in vote.
 15. Improve message passing more smoothly.
    * Batch size is limited to 65536 in order to avoid  inefficiently message passing.
-   * Send less data in order to avoid performance jitter.
+   * Send less data at a time in order to avoid performance jitter.
 16. Fix thread synchronization problems when staring Group Replication.
 17. A lot of other problems which occur very rarely are not described for clarity.
 
