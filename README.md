@@ -1,5 +1,5 @@
 # MySQL Group Replication Download
-## Make MySQL Group Repliation more robust and stable
+## Make MySQL Group Replication more robust and stable
 
 ## Problems solved：
 1. Solve performance jitter caused by the certification garbage collection.
@@ -17,16 +17,16 @@
 9. Fix the whole cluster's performance collapse when the disk is full.
 10. Fix lots of thread synchronization problems for Group Replication consistency when view is changed.
 11. Improve performance for BEFORE consistency level.
-12. Accelate automatic primary election.
+12. Accelerate automatic primary election.
 13. Detect network conditions more accurately.
 14. Add arbitrator mode for Paxos communication.
 15. Improve message passing more smoothly.
 16. Fix thread synchronization problems when staring Group Replication.
 
 ## Note:
-1. The tar.xz file only works for centos 7+ version
+1. The tar.xz file only works for Centos 7+ version
 2. As the flow control algorithm is total different, the modified version is not compatible with the official version
-3. slave_parallel_workers should be set two twice the cpu number in order to achieve beffer performance.
+3. slave_parallel_workers should be set two twice the CPU number in order to achieve better performance.
 4. For using arbitrator, set loose-group_replication_arbitrator=true
 5. The new flow control algorithm uses group_replication_flow_control_replay_lag_behind variable which default value is 60 seconds for flow control. If you want to do write test only, you should set group_replication_flow_control_replay_lag_behind larger.
 
