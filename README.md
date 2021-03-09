@@ -24,7 +24,7 @@
 10. Fix lots of thread synchronization problems for Group Replication consistency when view is changed.
    * A lot of horrible errors could occur when one member is joined.
 11. Improve performance for BEFORE consistency level.
-   * This modification could improve significantly for consistent reading
+   * This modification could improve performance significantly for consistent reading
 12. Accelerate automatic primary election.
    * Change from original about 30 seconds to about 7~13 seconds according to failure type. It should be noted that group_replication_member_expel_timeout takes up 5 seconds by default.
 13. Detect network conditions more accurately.
