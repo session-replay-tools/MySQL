@@ -1,7 +1,7 @@
 # MySQL Group Replication Download
 ## Make MySQL Group Replication more robust and stable
 
-## Problems solved：
+## The following problems are resolved：
 1. Solve performance jitter caused by the Certification garbage collection.
    * A new data structure is designed in order to collect garbage more effectively and quickly. 
 2. Solve performance jitter caused by flow control module.
@@ -35,7 +35,7 @@
    * Batch size is limited to 65536 in order to avoid  inefficiently message passing.
    * Send less data in order to avoid performance jitter.
 16. Fix thread synchronization problems when staring Group Replication.
-
+17. A lot of other problems which occur very rarely are not described for clarity.
 
 ## Note:
 1. The tar.xz file only works for Centos 7+ version
