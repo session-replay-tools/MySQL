@@ -22,6 +22,7 @@
 9. Fix the whole cluster's performance collapse when the disk is full.
    * When one disk is full, the whole cluster could possibly enter a dead state.
 10. Fix lots of thread synchronization problems for Group Replication consistency when view is changed.
+   * A lot of horrible errors could occur when one member is joined.
 11. Improve performance for BEFORE consistency level.
    * This modification could improve significantly for consistent reading
 12. Accelerate automatic primary election.
