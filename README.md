@@ -40,7 +40,7 @@
 ## Note:
 1. The tar.xz file only works for Centos 7+ version
 2. As the flow control algorithm is total different, the modified version is not compatible with the official version
-3. slave_parallel_workers should be set two twice the CPU number in order to achieve better performance.
+3. slave_parallel_workers should be set twice the CPU number in order to achieve better performance.
 4. For using arbitrator, set loose-group_replication_arbitrator=true
 5. The new flow control algorithm uses group_replication_flow_control_replay_lag_behind variable which default value is 60 seconds for flow control. If you want to do write test only, you should set group_replication_flow_control_replay_lag_behind larger.
 
