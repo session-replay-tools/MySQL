@@ -35,10 +35,18 @@
    * Batch size is limited to 65536 in order to avoid  inefficiently message passing.
    * Send less data at a time in order to avoid performance jitter.
 16. Fix thread synchronization problems when staring Group Replication.
-17. A lot of other problems which occur very rarely are not described for clarity.
+17. Improve paxos to improve performance when deployed in multi-site systems.
+18. Improve the coroutine schedule in xcom to mitigate FLP impossibility.
+19. Support 64G large transactions.
+20. Fix reference key related problems.
+21. Fix gtid chaos problems when stop recovering node.
+22. Fix dead loop when creating thread is failed, etc
+23. Support zone_id mode when deployed in multi-site systems.
+24. Support fast mode which removes certification database for single primary .
+25. A lot of other problems which occur very rarely are not described for clarity.
 
 ## Note:
-1. The tar.xz file only works for Centos 7+ version
+1. The tar file only works for Centos 7+ version
 2. As the flow control algorithm is total different, the modified version is not compatible with the official version
 3. slave_parallel_workers should be set twice the CPU number in order to achieve better performance.
 4. For using arbitrator, set loose-group_replication_arbitrator=true
